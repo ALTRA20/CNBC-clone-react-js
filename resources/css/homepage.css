@@ -1,0 +1,85 @@
+*{
+/*  color: black;*/
+}
+
+/* Gaya dasar untuk semua judul */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+/* Gaya untuk judul h1 */
+h1 {
+  font-size: 2.5rem!important;
+}
+
+/* Gaya untuk judul h2 */
+h2 {
+  font-size: 2rem!important;
+}
+
+/* Gaya untuk judul h3 */
+h3 {
+  font-size: 1.75rem!important;
+}
+
+/* Gaya untuk judul h4 */
+h4 {
+  font-size: 1.5rem!important;
+}
+
+/* Gaya untuk judul h5 */
+h5 {
+  font-size: 1.25rem!important;
+}
+
+/* Gaya untuk judul h6 */
+h6 {
+  font-size: 1rem!important;
+}
+
+#newsCategory::after{
+  content: "|";
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+.loading-bar {
+  position: relative;
+  width: 100%; /* lebar loading bar */
+  height: 10px; /* tinggi loading bar */
+  background-color: #ddd; /* warna background loading bar */
+}
+
+.loading-bar::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: green; /* warna loading bar */
+  animation: fill 5s ease-in-out forwards;
+}
+
+@keyframes fill {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.newsBanner{
+	content: "haki";
+	background-color: rgba(0, 0, 0, 1)!important;
+}
+.bi-check-circle{
+	color: green!important;
+}
